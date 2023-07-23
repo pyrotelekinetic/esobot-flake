@@ -39,6 +39,8 @@ in {
       pillow
       dateparser
       pyahocorasick
+      pint
+      beautifulsoup4
     ];
 
     postUnpack = "cp ${self}/setup.py source/setup.py";
