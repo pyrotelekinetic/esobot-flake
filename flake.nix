@@ -43,6 +43,8 @@ in {
 
     postUnpack = "cp ${self}/setup.py source/setup.py";
 
+    postInstall = "mv $out/bin/main.py $out/bin/esobot";
+
     doCheck = false;
   };
 };
